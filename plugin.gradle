@@ -7,7 +7,7 @@ connection.requestMethod = 'GET'
 
 try {
     def inputStream = connection.inputStream
-    def fileOutputStream = new FileOutputStream('dependencies-pagseguro.gradle')
+    def fileOutputStream = new FileOutputStream('dependencies.gradle')
 
     byte[] buffer = new byte[4096]
     int bytesRead
