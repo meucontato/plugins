@@ -1,4 +1,4 @@
-String url = 'https://raw.githubusercontent.com/meucontato/central-dependencies/main/pagseguro-1.4.gradle'
+String url = 'https://raw.githubusercontent.com/meucontato/central-dependencies/main/dependencies-1.0.gradle'
 def connection = new URL(url).openConnection() as HttpURLConnection
 
 connection.setRequestProperty('Authorization', System.getenv("CENTRAL_PLUGINS_AUTHORIZATION"))
@@ -23,4 +23,4 @@ try {
     connection.disconnect()
 }
 
-apply from: 'dependencies-pagseguro.gradle'
+apply from: 'dependencies.gradle'
